@@ -23,7 +23,7 @@ download_task = PythonOperator(
 )
 
 clear_task = PythonOperator(
-    task_id = "clear_daatset",
+    task_id = "clear_dataset",
     python_callable=preprocess_dataset,
     dag=dag
 )
